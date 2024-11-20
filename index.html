@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Streaming Liga</title>
+    <title>Streaming One Piece</title>
     <style>
         /* Gaya untuk header */
         header {
             background-color: #333;
             color: #fff;
-            padding: 20px;
             text-align: center;
+            padding: 20px;
         }
 
         header h1 {
@@ -21,7 +21,8 @@
         nav ul {
             list-style: none;
             padding: 0;
-            margin: 10px 0 0;
+            margin: 10px 0;
+            text-align: center;
         }
 
         nav ul li {
@@ -30,35 +31,32 @@
         }
 
         nav ul li a {
-            color: #fff;
             text-decoration: none;
+            color: #fff;
             font-weight: bold;
         }
 
-        /* Gaya untuk section */
+        /* Gaya untuk konten */
         section {
             margin: 20px auto;
             padding: 20px;
-            max-width: 900px;
-            background-color: #fff;
+            max-width: 800px;
+            background-color: #f9f9f9;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
-        /* Media query untuk responsif */
-        @media (max-width: 768px) {
-            header {
-                padding: 10px;
-            }
+        section h2 {
+            text-align: center;
+            color: #333;
+        }
 
-            header h1 {
-                font-size: 1.5em;
-            }
-
-            nav ul li {
-                display: block;
-                margin: 5px 0;
-            }
+        iframe {
+            display: block;
+            margin: 0 auto;
+            width: 100%;
+            max-width: 700px;
+            height: 400px;
         }
 
         /* Gaya footer */
@@ -68,32 +66,51 @@
             color: #777;
             font-size: 0.9em;
         }
+
+        /* Media query untuk ponsel */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.5em;
+            }
+
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+
+            iframe {
+                height: 300px;
+            }
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Streaming Liga</h1>
+        <h1>Streaming One Piece</h1>
         <nav>
             <ul>
-                <li><a href="https://slametalbarkah.github.io/semua/">Beranda</a></li>
-                <li><a href="https://slametalbarkah.github.io/semua/liga-spanyol">Liga Spanyol</a></li>
-                <li><a href="https://slametalbarkah.github.io/semua/liga-inggris">Liga Inggris</a></li>
-                <li><a href="https://slametalbarkah.github.io/semua/liga-germany">Liga Jerman</a></li>
-                <li><a href="https://slametalbarkah.github.io/semua/liga-prancis">Liga Prancis</a></li>
-                <li><a href="https://slametalbarkah.github.io/semua/liga-belanda">Liga Belanda</a></li>
-                <li><a href="https://slametalbarkah.github.io/semua/liga-portugal">Liga Portugal</a></li>
-                <li><a href="https://slametalbarkah.github.io/semua/liga-polandia">Liga Polandia</a></li>
-                <li><a href="https://slametalbarkah.github.io/semua/liga-italia">Liga Italia</a></li>
-                <li><a href="https://slametalbarkah.github.io/semua/liga-arab">Liga Arab</a></li>
+                <li><a href="#episode-1">Episode 1</a></li>
+                <li><a href="#episode-2">Episode 2</a></li>
+                <li><a href="#episode-3">Episode 3</a></li>
+                <!-- Tambahkan menu episode lainnya di sini -->
             </ul>
         </nav>
     </header>
 
-    <section>
-        <h2>Selamat Datang</h2>
-        <p>Nikmati streaming pertandingan liga favorit Anda secara langsung. Klik salah satu liga di atas untuk menonton.</p>
-        <center><iframe src="https://www.verhd.xyz/2015/03/canal-5-de-deportes.html" width="700" height="480" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay;"></iframe><center>
-</section>
+    <section id="episode-1">
+        <h2>Episode 1</h2>
+        <iframe src="https://www.bilibili.tv/id/play/37976/10435029" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <section id="episode-2">
+        <h2>Episode 2</h2>
+        <p>Link menuju episode ini belum tersedia. Nantikan update berikutnya!</p>
+    </section>
+
+    <section id="episode-3">
+        <h2>Episode 3</h2>
+        <p>Link menuju episode ini belum tersedia. Nantikan update berikutnya!</p>
+    </section>
 
     <footer>
         <p>Design by Slamet Albarkah</p>
