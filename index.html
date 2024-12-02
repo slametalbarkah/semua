@@ -5,9 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Streaming One Piece</title>
     <style>
-        /* Gaya untuk header */
+        /* Gaya untuk seluruh halaman */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('https://raw.githubusercontent.com/slametalbarkah/semua/30e9328549ce3100fdb693325f42f1a89b1e0b9c/Screenshot%202024-11-17%20231358.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            color: #fff;
+        }
+
         header {
-            background-color: #333;
+            background-image: url('https://raw.githubusercontent.com/slametalbarkah/semua/dd3cb8f279eac965600631dbf16432d91474a1c6/Screenshot%202024-11-20%20082054.png');
+            background-size: cover;
+            background-position: center;
             color: #fff;
             text-align: center;
             padding: 20px;
@@ -16,54 +29,47 @@
         header h1 {
             margin: 0;
             font-size: 2em;
+            background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Tambahkan bayangan agar teks lebih terlihat */
         }
 
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 10px 0;
-            text-align: center;
-        }
-
-        nav ul li {
-            display: inline;
-            margin-right: 15px;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: #fff;
-            font-weight: bold;
-        }
-
-        /* Gaya untuk konten */
         section {
             margin: 20px auto;
             padding: 20px;
             max-width: 800px;
-            background-color: #f9f9f9;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        iframe {
+            width: 65%;
+            max-width: 750px;
+            height: 400px;
+            margin-left: -30px;
+        }
+
+        .image-box {
+            width: 30%;
+            text-align: center;
+        }
+
+        .image-box img {
+            max-width: 100%;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
-        section h2 {
-            text-align: center;
-            color: #333;
-        }
-
-        iframe {
-            display: block;
-            margin: 0 auto;
-            width: 100%;
-            max-width: 700px;
-            height: 400px;
-        }
-
-        /* Gaya footer */
         footer {
             text-align: center;
             margin: 20px 0;
-            color: #777;
+            color: #fff;
             font-size: 0.9em;
         }
 
@@ -73,13 +79,19 @@
                 font-size: 1.5em;
             }
 
-            nav ul li {
-                display: block;
-                margin: 10px 0;
+            iframe {
+                width: 100%;
+                margin-left: 0;
+                height: 300px;
             }
 
-            iframe {
-                height: 300px;
+            section {
+                flex-direction: column;
+            }
+
+            .image-box {
+                width: 100%;
+                margin-top: 20px;
             }
         }
     </style>
@@ -87,29 +99,13 @@
 <body>
     <header>
         <h1>Streaming One Piece</h1>
-        <nav>
-            <ul>
-                <li><a href="#episode-1">Episode 1</a></li>
-                <li><a href="#episode-2">Episode 2</a></li>
-                <li><a href="#episode-3">Episode 3</a></li>
-                <!-- Tambahkan menu episode lainnya di sini -->
-            </ul>
-        </nav>
     </header>
 
-    <section id="episode-1">
-        <h2>Episode 1</h2>
+    <section>
         <iframe src="https://www.bilibili.tv/id/play/37976/10435029" frameborder="0" allowfullscreen></iframe>
-    </section>
-
-    <section id="episode-2">
-        <h2>Episode 2</h2>
-        <p>Link menuju episode ini belum tersedia. Nantikan update berikutnya!</p>
-    </section>
-
-    <section id="episode-3">
-        <h2>Episode 3</h2>
-        <p>Link menuju episode ini belum tersedia. Nantikan update berikutnya!</p>
+        <div class="image-box">
+            <img src="https://raw.githubusercontent.com/slametalbarkah/semua/1c3baaa7ea3f531623e0c4145a1f2e829d187b1f/Screenshot%202024-12-02%20140341.png" alt="Gambar One Piece">
+        </div>
     </section>
 
     <footer>
